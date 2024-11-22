@@ -1,0 +1,574 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-image: url("image/header.jpg");
+    padding: 1px;
+    width: 100%;
+    height: 50vw;
+}
+
+ul li {
+    list-style: none;
+    float: left;
+    margin-inline: 40px;
+    color: white;
+    margin-top: 35px;
+
+}
+
+ul li img {
+    width: 70px;
+    height: 50px;
+}
+
+.clear {
+    clear: both;
+}
+
+.text1 {
+    margin-top: 100px;
+    margin-left: 40%;
+}
+
+.text1 h3 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    animation-name: uptodown;
+    animation-duration: .9s;
+}
+
+.text1 h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+    animation-name: righttolift;
+    animation-duration: .9s;
+}
+
+.bt {
+    padding: 10px;
+    color: red;
+    border-radius: 10px;
+    animation-name: appear;
+    animation-duration: 1s;
+
+}
+
+@keyframes uptodown {
+    0% {
+        transform: translatey(-100%);
+        -webkit-transform: translatey(-100%);
+        -moz-transform: translatey(-100%);
+        -ms-transform: translatey(-100%);
+        -o-transform: translatey(-100%);
+}
+
+    100% {
+        transform: translatey(0%);
+        -webkit-transform: translatey(0%);
+        -moz-transform: translatey(0%);
+        -ms-transform: translatey(0%);
+        -o-transform: translatey(0%);
+}
+}
+
+@keyframes righttolift {
+    0% {
+        transform: translatex(100%);
+        -webkit-transform: translatex(100%);
+        -moz-transform: translatex(100%);
+        -ms-transform: translatex(100%);
+        -o-transform: translatex(100%);
+    }
+
+    100% {
+        transform: translatex(0%);
+        -webkit-transform: translatex(0%);
+        -moz-transform: translatex(0%);
+        -ms-transform: translatex(0%);
+        -o-transform: translatex(0%);
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: .3;
+    }
+
+    60% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.bt:hover {
+    background-color: red;
+    color: rgb(236, 232, 232);
+}
+
+.box1 {
+
+    width: 80%;
+    margin: auto;
+}
+
+.text2 {
+    margin-top: 100px;
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+
+
+}
+
+.text2 h1 {
+    letter-spacing: 3px;
+}
+
+.text2 p {
+    margin-top: 5px;
+}
+
+.pic1 {
+    width: 300px;
+    height: 300px;
+    margin-top: 30px;
+    margin-left: 200px;
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 10px;
+    transition-duration: 2s;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.pic1 img {
+    width: 400px;
+    height: 400px;
+}
+
+.pic1:hover img {
+    transform: scale(1.2, 1.2);
+    -webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
+    -o-transform: scale(1.2, 1.2);
+}
+
+.discover {
+    margin-top: 100px;
+    background-image: url("image/bg-intro-01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1px;
+    width: 100%;
+    height: 500px;
+}
+
+.discover h2 {
+    color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+.discover h1 {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    letter-spacing: 15px;
+}
+
+.discover_text {
+    margin-top: 15%;
+    margin-left: 10%;
+}
+
+.three_cards {
+    width: 90%;
+    margin: auto;
+    margin-top: 80px;
+
+
+
+}
+
+.card {
+    width: calc((100%/3) - 20px);
+    float: left;
+    text-align: left;
+    margin: 10px;
+
+
+
+
+}
+
+.card-text {
+    margin-top: 30px;
+
+}
+
+.card-img {
+    border-radius: 10px;
+    width: 300;
+    height: 200;
+    overflow: hidden;
+    transition-duration: 2s;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.card-img img {
+    height: 100%;
+    width: 100%;
+
+}
+
+.card-text h2 {
+    font-size: 30px;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+.card-img:hover img {
+    transform: scale(1.2, 1.2);
+    -webkit-transform: scale(1.2, 1.2);
+    -moz-transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
+    -o-transform: scale(1.2, 1.2);
+}
+
+.card-text p {
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 50;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-text h5 {
+    margin-top: 15px;
+    font-size: 50;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-text:hover h2 {
+    color: red;
+}
+
+.card-text:hover p {
+    color: rgb(0, 255, 68);
+}
+
+.discover2 {
+    background-color: gray;
+    width: 100%;
+    height: 800px;
+    margin-top: 40px;
+    padding: 1px;
+}
+
+.textd2 {
+    text-align: center;
+    margin-top: 70px;
+    margin-left: 10px;
+}
+
+.textd2 p {
+    color: red;
+    font-size: 40px;
+}
+
+.textd2 h2 {
+    font-weight: bold;
+    font-size: 50px;
+    letter-spacing: 5px;
+    word-spacing: 3px;
+}
+
+.cards {
+    width: 90%;
+    margin: auto;
+    margin-top: 80px;
+
+
+
+}
+
+.card1 {
+    width: calc((100%/3) - 50px);
+    float: left;
+
+    margin: 10px;
+    height: 400px;
+
+}
+
+.bt2 {
+    margin-top: 50%;
+    margin-left: 45%;
+    color: black;
+    background-color: white;
+    padding: 15px;
+}
+
+.card1 {
+    background-image: url("image/our-menu-01.jpg");
+    height: 500px;
+    width: 400px;
+    margin-left: 100px;
+}
+
+.card2 {
+    background-image: url("image/our-menu-05.jpg");
+    height: 500px;
+    width: 400px;
+    margin-left: 100px;
+}
+
+.upcomming_event {
+    background-image: url("image/bg-event-01.jpg");
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 700px;
+    padding: 1px;
+}
+
+.event_text {
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.event_text p {
+    color: red;
+    font-size: 50px;
+}
+
+.event_text h2 {
+    color: white;
+    font-size: 60px;
+    letter-spacing: 4px;
+
+}
+
+.event_box {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.box_text1 {
+    float: left;
+    color: rgb(216, 211, 220);
+    background-color: red;
+    font-size: 60;
+    transform: rotate(90deg);
+    width: 300px;
+    height: 20px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+.box_img {
+    /* background-image: url("image/event-01.jpg"); */
+    width: 550px;
+    height: 400px;
+    float: left;
+    
+    animation-name: uptodown;
+    animation-duration: .9s;
+}
+
+.box_img img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.box_text2 {
+    width: 550px;
+    height: 400px;
+    color: rgb(7, 7, 7);
+    background-color: white;
+    float: left;
+    
+    animation-name: uptodown;
+    animation-duration: .9s;
+}
+
+.box_text2 h1 {
+    font-size: 20px;
+    margin-top: 70px;
+    letter-spacing: 3px;
+    word-spacing: 4px;
+    text-align: center;
+    margin-left: 10px;
+}
+.box_text2 h3 {
+    font-size: 20px;
+    margin-top: 50px;
+    text-align: center;
+    margin-left: 10px;
+    font-weight: normal;
+
+}
+.numbers{
+    
+    width: 80%;
+    margin: auto;
+
+}
+.num{
+    margin-top: 80px;
+    
+    text-align: center;
+    float: left;
+    width: 25%;
+}
+.num h2{
+    font-size: 30px;
+    color: red;
+}
+.num h4{
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 10px;
+}
+.numbers p{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.Reservation{
+    text-align: center;
+    height: 800px;
+    width: 80%;
+    margin: auto;
+}
+.Reservation_form{
+    width: 700px;
+    margin-top: 70px;
+    float: left;
+   
+}
+.Reservation_form h3{
+    text-align: center;
+    font-size: 30px;
+    color: red;
+}
+
+.Reservation_form h1{
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    
+    
+}
+.Reservation_img{
+    float: left;
+    margin-top: 50px;
+    width: 300px;
+    height: 400px;
+
+}
+.Reservation_img img{
+    width: 100%;
+    height: 100%;
+}
+.review{
+    text-align: center;
+    margin-top: 80px;
+}
+.review img{
+    border-radius: 50%;
+    border: 5px solid red;
+    animation: appear 2s ease-in-out;
+    -webkit-animation: appear 2s ease-in-out;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.review p{
+        quotes: '”' '”';
+        font-size: 20px;
+        animation: uptodown 2s linear;
+        -webkit-animation: uptodown 2s linear;
+}
+.review h1{
+    letter-spacing: 6px;
+    font-size: 50px;
+
+    text-transform: uppercase;
+}
+.review h2{
+    color: red;
+    font-size: 30px;
+}
+
+.vid{
+    margin-top: 100px;
+    width: 100%;
+    height: 600px;
+    background-image: url("image/bg-cover-video-02.jpg");
+    padding: 1px;
+}
+.vid_text{
+    text-align: center;
+
+    margin-top: 200px;
+    margin-left: 200px;
+}
+.vid_text h3{
+    color: red;
+    font-size: 40px;
+}
+.vid_text h1{
+    margin-top: 15px;
+    font-size: 30px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.vid_text img{
+    margin-top: 15px;
+    border-radius: 50%;
+    width: 150px;
+    height: 100px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.vid_img:hover {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
+.Reservation th{
+    width: 100px;
+}
